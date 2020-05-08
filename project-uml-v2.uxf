@@ -1,0 +1,80 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>206</y><w>210</w><h>70</h></coordinates><panel_attributes>Project
+--
+- ID   PK
+- name</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>206</y><w>210</w><h>90</h></coordinates><panel_attributes>Subproject
+--
+- ID   PK
+- begin_date
+- end_date
+- description</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>206</y><w>250</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1..1
+m2=1..*
+contains &gt;</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>376</y><w>210</w><h>70</h></coordinates><panel_attributes>Location
+--
+- ID   PK
+- address</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>266</y><w>90</w><h>130</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=1..1
+handles ^</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>76</y><w>180</w><h>150</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=1..1
+depends on &gt;</panel_attributes><additional_attributes>140;130;140;20;10;20;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>526</y><w>150</w><h>70</h></coordinates><panel_attributes>Employee
+--
+- ID   PK
+- name</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>716</y><w>210</w><h>90</h></coordinates><panel_attributes>Qualification
+--
+- ID   PK
+- name
+- description</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>586</y><w>120</w><h>150</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=0..*
+is qualified in v</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>286</y><w>150</w><h>260</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=0..*
+EmployeeAssignment</panel_attributes><additional_attributes>10;10;10;240</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>536</y><w>220</w><h>50</h></coordinates><panel_attributes>lt=-[PK]
+m1=1..1
+m2=0..*
+&lt; is absent during </panel_attributes><additional_attributes>200;20;20;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>386</y><w>210</w><h>50</h></coordinates><panel_attributes>Machine
+--
+- ID   PK</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>216</y><w>220</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..*</panel_attributes><additional_attributes>10;10;200;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>196</y><w>210</w><h>110</h></coordinates><panel_attributes>MachineModel
+--
+- ID   PK
+- name
+- manufacturer
+- size
+- energy_consumption</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>920</x><y>296</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=1..1
+m2=0..*
+is a ^</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>526</y><w>210</w><h>110</h></coordinates><panel_attributes>Absences
+--
+- begin_date   PK
+- end_date
+- substitute_ID</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>840</x><y>546</y><w>210</w><h>90</h></coordinates><panel_attributes>MachineDowntime
+--
+- ID   PK
+- start_date   PK
+- end_date</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>920</x><y>426</y><w>110</w><h>140</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=1..1
+is unusable v</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>246</y><w>220</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=0..*
+</panel_attributes><additional_attributes>10;10;200;140</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>306</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=-
+m1=
+m2=</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>406</y><w>180</w><h>70</h></coordinates><panel_attributes>MachineAssignment
+--
+- startDate
+- endDate</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>136</y><w>140</w><h>50</h></coordinates><panel_attributes>requires
+--
+- count</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>176</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=-
+m1=
+m2=</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>286</y><w>50</w><h>450</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=0..*
+</panel_attributes><additional_attributes>10;430;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>606</y><w>70</w><h>30</h></coordinates><panel_attributes>lt=-
+m1=
+m2=</panel_attributes><additional_attributes>10;10;50;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>586</y><w>140</w><h>50</h></coordinates><panel_attributes>requires
+--
+- count</panel_attributes><additional_attributes></additional_attributes></element></diagram>
